@@ -1,0 +1,59 @@
+.menu-list {
+  width: 100%;
+  background: $transparent-gray2;
+  backdrop-filter: blur(60px);
+  border-radius: 20px;
+  padding: 16px 0;
+  max-width: 150px;
+}
+
+.menu-actions-list {
+  background: $alternative-3-linear-gradient;
+  backdrop-filter: blur(40px);
+  border-radius: 20px;
+  padding: 10px 26px;
+  min-width: 150px;
+}
+
+.menu-action {
+  transition: all 250ms ease-in-out;
+
+  &:hover {
+    color: $primary !important;
+  }
+}
+
+.menu-item {
+  min-height: unset;
+  padding: 10px 20px;
+  color: $white;
+  transition: color 250ms ease-in-out;
+
+  &:hover,
+  &:active,
+  &.active {
+    color: $primary;
+  }
+}
+
+.settings-menu {
+  position: relative;
+  background: $alternative-5;
+  overflow: visible !important;
+  min-width: 206px;
+  padding: 26px 21px;
+  box-shadow: none;
+}
+
+.settings-icon {
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $alternative-5;
+}
+
+.q-select__dialog {
+  background: $secondary;
+}

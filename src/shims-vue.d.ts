@@ -1,0 +1,11 @@
+// Mocks all files ending in `.vue` showing them as plain Vue instances
+/* eslint-disable */
+declare module '*.vue' {
+  import type { DefineComponent } from 'vue';
+  const component: DefineComponent<{}, {}, any>;
+  export default component;
+}
+
+declare module '@kangc/v-md-editor';
+declare module '@kangc/v-md-editor/lib/theme/vuepress.js';
+declare module '@kangc/v-md-editor/lib/lang/en-US';

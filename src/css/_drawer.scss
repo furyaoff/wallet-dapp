@@ -1,0 +1,39 @@
+.q-drawer {
+  background-color: $secondary;
+
+  @media screen and (min-width: $breakpoint-md-min) {
+    background-color: transparent;
+  }
+}
+
+.q-drawer--left {
+  @media screen and (min-width: $breakpoint-md-min) {
+    left: var(--offset-left, 0);
+  }
+}
+
+.q-drawer--right {
+  @media screen and (min-width: $breakpoint-md-min) {
+    right: var(--offset-right, 0);
+  }
+}
+
+.drawer-menu {
+  padding-top: 80px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  @media screen and (min-width: $breakpoint-md-min) {
+    padding-top: 190px;
+    padding-right: 38px;
+    padding-left: 0;
+  }
+
+  @media screen and (max-height: 820px) {
+    padding-top: 37px;
+  }
+
+  &.back {
+    padding-top: 60px;
+  }
+}

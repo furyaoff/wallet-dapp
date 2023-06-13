@@ -1,0 +1,18 @@
+// app global css in SCSS form
+@import 'quasar.variables.scss';
+@import 'utils';
+@import 'typography';
+@import 'buttons';
+@import 'input';
+@import 'drawer';
+@import 'menu';
+@import 'dialog';
+@import 'animations';
+@import 'scrollbar';
+@import 'notify';
+@import 'markdown';
+
+.q-body--prevent-scroll {
+  position: static !important;
+  overflow: hidden !important;
+}
